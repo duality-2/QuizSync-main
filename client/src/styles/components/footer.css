@@ -1,0 +1,118 @@
+/* Footer */
+footer {
+  background: #1a202c;
+  color: white;
+  padding: 60px 5% 30px;
+  margin-top: 0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  animation: navFooterGradientMove 6s linear infinite alternate;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  animation: slideInUp 0.8s ease-out;
+}
+
+.footer-section h3 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer-section p {
+  color: #a0aec0;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section a {
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+.footer-section a:hover {
+  color: var(--accent);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.contact-info span:first-child {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+  min-width: 25px;
+}
+
+.contact-info a,
+.contact-info span:not(:first-child) {
+  color: #a0aec0;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #2d3748;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  animation: bounceIn 0.6s ease-out;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+.social-links a:hover {
+  background: var(--primary);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.footer-bottom {
+  border-top: 1px solid #2d3748;
+  padding-top: 2rem;
+  text-align: center;
+  color: #718096;
+  font-size: 0.95rem;
+} 

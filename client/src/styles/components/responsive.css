@@ -1,0 +1,168 @@
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .logo-text {
+    font-size: 1.7rem;
+  }
+  .nav-links {
+    gap: 1.2rem;
+  }
+  .profile-btn {
+    margin-left: 1rem;
+  }
+  .logo img {
+    height: 48px;
+    width: 48px;
+  }
+  .nav-center {
+    left: 45%;
+  }
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .quiz-content {
+    gap: 4rem;
+  }
+  .hero-title-main {
+    font-size: 3.2rem;
+    margin-top: 90px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logo-text {
+    font-size: 1.2rem;
+  }
+  .nav-links-group {
+    gap: 0.5rem;
+  }
+  .profile-btn {
+    margin-left: 0.3rem;
+  }
+  .logo img {
+    height: 32px;
+    width: 32px;
+  }
+  .hero-title-main {
+    font-size: 2.1rem;
+    margin-top: 60px;
+    margin-bottom: 18px;
+  }
+  .hero-motivation {
+    font-size: 1.1rem;
+  }
+  .hero-goal {
+    font-size: 0.95rem;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .quiz-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+  .quiz-text h2 {
+    font-size: 2.5rem;
+  }
+  .quiz-circle {
+    width: 250px;
+    height: 250px;
+    font-size: 4rem;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .contact-info {
+    justify-content: center;
+    text-align: left;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 98vw;
+    width: 98vw;
+    margin: 10% auto;
+    max-height: 96vh;
+  }
+  .modal-form-section {
+    padding: 0.3rem 0.1rem 0.7rem 0.1rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .section {
+    padding: 80px 5%;
+  }
+  .quiz-section {
+    padding: 80px 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-main {
+    font-size: 1.3rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .hero-motivation {
+    font-size: 0.95rem;
+  }
+  .hero-goal {
+    font-size: 0.8rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .quiz-text h2 {
+    font-size: 2rem;
+  }
+  .quiz-circle {
+    width: 200px;
+    height: 200px;
+    font-size: 3rem;
+  }
+  .modal-content {
+    max-width: 98vw;
+    width: 98vw;
+    margin: 10% auto;
+    max-height: 96vh;
+  }
+  .modal-form-section {
+    padding: 0.3rem 0.1rem 0.7rem 0.1rem;
+  }
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+  #joinQuizModal .modal-content {
+    max-width: 98vw;
+    padding: 1.2rem 0.3rem 1.2rem 0.3rem;
+  }
+  .join-quiz-input {
+    font-size: 1.1rem;
+    padding: 0.9rem 0.7rem;
+  }
+  .join-quiz-btn {
+    font-size: 1.05rem;
+    padding: 0.9rem 0;
+  }
+} 

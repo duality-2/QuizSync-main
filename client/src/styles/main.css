@@ -1,0 +1,55 @@
+/* === PRIMARY COLOR THEME: #324376 === */
+
+:root {
+  --primary: #324376;
+  --primary-light: #4a5a8a;
+  --primary-dark: #222d3a;
+  --accent: #5e7cff;
+  --accent-light: #a3b6e7;
+  --accent-dark: #22305a;
+  --bg-light: #f4f6fa;
+  --bg-gradient: linear-gradient(135deg, #324376 0%, #4a5a8a 100%);
+  --feature1: linear-gradient(135deg, #4a5a8a 60%, #324376 100%);
+  --feature2: linear-gradient(135deg, #a3b6e7 60%, #4a5a8a 100%);
+  --feature3: linear-gradient(135deg, #22305a 60%, #324376 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  background: var(--bg-light);
+}
+
+/* Container for proper layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+/* Import all CSS modules */
+@import './components/navbar.css';
+@import './components/hero.css';
+@import './components/features.css';
+@import './components/quiz-sections.css';
+@import './components/modals.css';
+@import './components/forms.css';
+@import './components/footer.css';
+@import './components/animations.css';
+@import './components/responsive.css'; 
