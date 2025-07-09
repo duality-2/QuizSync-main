@@ -1,4 +1,13 @@
 let userData = [];
+try {
+  const storedData = localStorage.getItem("userData");
+  if (storedData) {
+    userData = JSON.parse(storedData);
+  }
+} catch (error) {
+  console.error("Error loading user data from localStorage:", error);
+  userData = []; // Fallback to empty array
+}
 
 function setupFormHandlers() {
   document.addEventListener("submit", function (event) {
@@ -37,6 +46,7 @@ function setupFormHandlers() {
 
       // Create user object
       const userObj = {
+        id: generateUniqueId(),
         name,
         email,
         password,
@@ -48,6 +58,16 @@ function setupFormHandlers() {
 
       console.log("User data stored:", userObj);
       console.log("All users:", userData);
+
+      // Save data to localStorage with error handling
+      try {
+        localStorage.setItem("userData", JSON.stringify(userData));
+        console.log("Data saved to localStorage successfully");
+      } catch (error) {
+        console.error("Error saving to localStorage:", error);
+        alert("Error saving data. Please try again.");
+        return;
+      }
 
       // Show success message
       alert("Account created successfully!");
@@ -67,8 +87,26 @@ function setupFormHandlers() {
   });
 }
 
-// Call both functions to ensure compatibility
-// storeUserData();
+function generateUniqueId() {
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const length = 8;
+  let id;
+  let attempts = 0;
+
+  do {
+    id = "";
+    for (let i = 0; i < length; i++) {
+      id += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    attempts++;
+    console.log(`🔍 Checking if ID "${id}" is unique (attempt ${attempts})...`);
+  } while (userData.some((user) => user.id === id));
+
+  console.log(`✅ Unique ID generated: "${id}" after ${attempts} attempt(s)`);
+  return id;
+}
+
 setupFormHandlers();
 
 // Function to get all stored users (for testing/debugging)
@@ -84,7 +122,10 @@ function findUserByEmail(email) {
 // Function to clear all user data (for testing)
 function clearAllUsers() {
   userData = [];
-  console.log("All user data cleared");
+  try {
+    localStorage.removeItem("userData");
+    console.log("All user data cleared from localStorage");
+  } catch (error) {
+    console.error("Error clearing localStorage:", error);
+  }
 }
-
-
