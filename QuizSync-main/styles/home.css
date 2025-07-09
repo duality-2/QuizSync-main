@@ -153,7 +153,6 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 2px;
   text-shadow: 0 4px 24px rgba(102, 126, 234, 0.18);
   animation: heroTitleGlow 2.5s infinite alternate,
@@ -693,7 +692,6 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 2px;
   text-shadow: 0 4px 24px rgba(102, 126, 234, 0.18);
   animation: heroTitleGlow 2.5s infinite alternate,
@@ -1233,7 +1231,6 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 2px;
   text-shadow: 0 4px 24px rgba(102, 126, 234, 0.18);
   animation: heroTitleGlow 2.5s infinite alternate,
@@ -1773,7 +1770,6 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 2px;
   text-shadow: 0 4px 24px rgba(102, 126, 234, 0.18);
   animation: heroTitleGlow 2.5s infinite alternate,
@@ -2313,7 +2309,6 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 2px;
   text-shadow: 0 4px 24px rgba(102, 126, 234, 0.18);
   animation: heroTitleGlow 2.5s infinite alternate,
@@ -2853,7 +2848,6 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 2px;
   text-shadow: 0 4px 24px rgba(102, 126, 234, 0.18);
   animation: heroTitleGlow 2.5s infinite alternate,
@@ -4457,7 +4451,6 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   font-size: 2.1rem;
   font-weight: 900;
   letter-spacing: 1px;
@@ -4603,7 +4596,6 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
   opacity: 0;
   animation: fadeInMotivation 1.2s 0.7s both;
 }
@@ -4738,7 +4730,6 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 2px;
   text-shadow: 0 4px 24px rgba(102, 126, 234, 0.18);
   animation: heroTitleGlow 2.5s infinite alternate,
@@ -4771,7 +4762,6 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   letter-spacing: 2.5px;
   text-shadow: 0 6px 32px rgba(102, 126, 234, 0.22);
   animation: heroTitleGlow 2.5s infinite alternate,

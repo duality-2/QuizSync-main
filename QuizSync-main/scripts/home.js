@@ -152,3 +152,45 @@ function updatePasswordStrength() {
 document
   .getElementById("signupPassword")
   .addEventListener("input", updatePasswordStrength);
+
+
+  
+// Password visibility toggle functionality for all password fields
+function setupPasswordVisibilityToggles() {
+  // Find all toggle buttons
+  const toggleButtons = document.querySelectorAll(
+    ".toggle-password-visibility"
+  );
+  toggleButtons.forEach(function (toggleBtn) {
+    // Find the previous sibling input[type=password] (or text)
+    let passwordInput = toggleBtn.previousElementSibling;
+    // If the previous sibling is not an input, search within the parent
+    if (
+      !passwordInput ||
+      passwordInput.tagName.toLowerCase() !== "input" ||
+      (passwordInput.type !== "password" && passwordInput.type !== "text")
+    ) {
+      passwordInput = toggleBtn.parentElement.querySelector(
+        'input[type="password"], input[type="text"]'
+      );
+    }
+    if (!passwordInput) return;
+
+    toggleBtn.addEventListener("click", function () {
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleBtn.textContent = "Hide";
+      } else {
+        passwordInput.type = "password";
+        toggleBtn.textContent = "Show";
+      }
+    });
+  });
+}
+
+// Call the password visibility toggle setup after DOM is loaded
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", setupPasswordVisibilityToggles);
+} else {
+  setupPasswordVisibilityToggles();
+}
