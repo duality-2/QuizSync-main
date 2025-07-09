@@ -361,6 +361,21 @@
         </div>
       </div>
 
+      <!-- Profile Modal -->
+      <div id="profileModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-form-section" style="align-items:center; text-align:center;">
+            <button class="close" onclick="closeModal('profileModal')">&times;</button>
+            <div style="margin: 1.5rem 0 1rem 0;">
+              <img src="profile logo.jpg" alt="Profile" style="width:90px; height:90px; border-radius:50%; box-shadow:0 2px 12px #667eea44; margin-bottom:1rem;" />
+              <h2 style="margin:0; font-size:1.5rem; color:#324376;" class="js-profile-name"></h2>
+              <p style="margin:0.5rem 0 1.5rem 0; color:#4a5a8a; font-size:1rem;" class="js-profile-email"></p>
+              <button style="padding:0.7rem 2rem; border-radius:30px; background:linear-gradient(90deg,#667eea,#fc466b); color:#fff; border:none; font-weight:600; cursor:pointer;" class="js-profile-logout">Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Footer -->
       <footer>
         <div class="footer-content">
@@ -455,6 +470,7 @@
         </div>
       </footer>
     </div>
+    <script src="scripts/profile.js"></script>
     <script src="scripts/login.js"></script>
     <script src="scripts/data.js"></script>
     <script src="scripts/home.js"></script>

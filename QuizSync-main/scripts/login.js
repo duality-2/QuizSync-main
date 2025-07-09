@@ -4,7 +4,8 @@ const loginPasswordElement = document.querySelector('.js-input-login-password')
 
 const loginButton = document.querySelector(".js-login-btn");
 if (loginButton) {
-  loginButton.addEventListener("click", function () {
+  loginButton.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent form submission if inside a form
     const enteredEmail = loginEmailElement.value.trim();
     const enteredPassword = loginPasswordElement.value;
 
@@ -18,6 +19,7 @@ if (loginButton) {
       const userById = userData.find((data) => data.id === userId);
 
       if (userById && userById.password === enteredPassword) {
+        localStorage.setItem('loggedInUser', JSON.stringify(userById)); // Store user info
         alert("Login successful!");
       } else {
         alert("Incorrect password.");

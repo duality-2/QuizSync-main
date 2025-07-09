@@ -194,3 +194,8 @@ if (document.readyState === "loading") {
 } else {
   setupPasswordVisibilityToggles();
 }
+
+// Open Profile Modal on profile button click
+document.querySelector('.profile-btn').addEventListener('click', function() {
+  document.getElementById('profileModal').style.display = 'block';
+});
