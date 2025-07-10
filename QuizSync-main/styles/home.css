@@ -1,5 +1,3 @@
-/* === PRIMARY COLOR THEME: #324376 === */
-
 :root {
   --primary: #324376;
   --primary-light: #4a5a8a;
@@ -4758,7 +4756,8 @@ footer {
   font-weight: 900;
   margin-top: 130px;
   margin-bottom: 38px;
-  background: linear-gradient(90deg, #667eea 0%, #fc466b 100%);
+  background: linear-gradient(90deg, #4c63d2 0%, #e91e63 100%); /* Darker, more saturated colors */
+  -webkit-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -4790,4 +4789,125 @@ footer {
     margin-top: 40px;
     margin-bottom: 10px;
   }
+}
+
+.hero .bubble-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero .bubble {
+  position: absolute;
+  bottom: -100px;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(1.5px);
+  background: rgba(255,255,255,0.18);
+  animation: bubbleFloat 14s linear infinite;
+}
+
+.hero .bubble1 {
+  left: 10%; width: 60px; height: 60px;
+  animation-duration: 16s;
+  animation-delay: 0s;
+  animation-name: bubbleFloat1;
+}
+.hero .bubble2 {
+  left: 25%; width: 40px; height: 40px;
+  animation-duration: 12s;
+  animation-delay: 2s;
+  animation-name: bubbleFloat2;
+}
+.hero .bubble3 {
+  left: 40%; width: 80px; height: 80px;
+  animation-duration: 18s;
+  animation-delay: 4s;
+  animation-name: bubbleFloat3;
+}
+.hero .bubble4 {
+  left: 60%; width: 50px; height: 50px;
+  animation-duration: 15s;
+  animation-delay: 1s;
+  animation-name: bubbleFloat4;
+}
+.hero .bubble5 {
+  left: 75%; width: 30px; height: 30px;
+  animation-duration: 11s;
+  animation-delay: 3s;
+  animation-name: bubbleFloat5;
+}
+.hero .bubble6 {
+  left: 85%; width: 70px; height: 70px;
+  animation-duration: 17s;
+  animation-delay: 5s;
+  animation-name: bubbleFloat6;
+}
+.hero .bubble7 {
+  left: 55%; width: 35px; height: 35px;
+  animation-duration: 13s;
+  animation-delay: 2.5s;
+  animation-name: bubbleFloat7;
+}
+.hero .bubble8 {
+  left: 15%; width: 25px; height: 25px;
+  animation-duration: 10s;
+  animation-delay: 1.5s;
+  animation-name: bubbleFloat8;
+}
+
+/* Each bubble gets a slightly different path for \"randomness\" */
+@keyframes bubbleFloat1 {
+  0%   { transform: translateY(0)      scale(1)    translateX(0);}
+  20%  { transform: translateY(-20vh)  scale(1.1)  translateX(-10px);}
+  40%  { transform: translateY(-40vh)  scale(0.95) translateX(10px);}
+  60%  { transform: translateY(-60vh)  scale(1.05) translateX(-15px);}
+  80%  { transform: translateY(-80vh)  scale(1.1)  translateX(5px);}
+  100% { transform: translateY(-100vh) scale(1)    translateX(0);}
+}
+@keyframes bubbleFloat2 {
+  0%   { transform: translateY(0)      scale(1)    translateX(0);}
+  25%  { transform: translateY(-25vh)  scale(1.05) translateX(15px);}
+  50%  { transform: translateY(-50vh)  scale(0.9)  translateX(-10px);}
+  75%  { transform: translateY(-75vh)  scale(1.1)  translateX(10px);}
+  100% { transform: translateY(-100vh) scale(1)    translateX(0);}
+}
+@keyframes bubbleFloat3 {
+  0%   { transform: translateY(0)      scale(1)    translateX(0);}
+  30%  { transform: translateY(-30vh)  scale(1.1)  translateX(-20px);}
+  60%  { transform: translateY(-60vh)  scale(0.95) translateX(20px);}
+  100% { transform: translateY(-100vh) scale(1)    translateX(0);}
+}
+@keyframes bubbleFloat4 {
+  0%   { transform: translateY(0)      scale(1)    translateX(0);}
+  20%  { transform: translateY(-20vh)  scale(1.05) translateX(10px);}
+  40%  { transform: translateY(-40vh)  scale(0.9)  translateX(-10px);}
+  60%  { transform: translateY(-60vh)  scale(1.1)  translateX(15px);}
+  80%  { transform: translateY(-80vh)  scale(1.05) translateX(-5px);}
+  100% { transform: translateY(-100vh) scale(1)    translateX(0);}
+}
+@keyframes bubbleFloat5 {
+  0%   { transform: translateY(0)      scale(1)    translateX(0);}
+  50%  { transform: translateY(-50vh)  scale(1.1)  translateX(-15px);}
+  100% { transform: translateY(-100vh) scale(1)    translateX(0);}
+}
+@keyframes bubbleFloat6 {
+  0%   { transform: translateY(0)      scale(1)    translateX(0);}
+  40%  { transform: translateY(-40vh)  scale(1.05) translateX(20px);}
+  80%  { transform: translateY(-80vh)  scale(0.95) translateX(-20px);}
+  100% { transform: translateY(-100vh) scale(1)    translateX(0);}
+}
+@keyframes bubbleFloat7 {
+  0%   { transform: translateY(0)      scale(1)    translateX(0);}
+  30%  { transform: translateY(-30vh)  scale(1.1)  translateX(10px);}
+  60%  { transform: translateY(-60vh)  scale(0.9)  translateX(-10px);}
+  100% { transform: translateY(-100vh) scale(1)    translateX(0);}
+}
+@keyframes bubbleFloat8 {
+  0%   { transform: translateY(0)      scale(1)    translateX(0);}
+  60%  { transform: translateY(-60vh)  scale(1.05) translateX(-10px);}
+  100% { transform: translateY(-100vh) scale(1)    translateX(0);}
 }
